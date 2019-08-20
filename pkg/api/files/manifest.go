@@ -22,8 +22,6 @@ import (
 	"sigs.k8s.io/yaml"
 )
 
-// Filestore holds information about a filestore (e.g. GCS or S3 bucket),
-// to be written in a manifest file.
 type Filestore struct {
 	// Base is the leading part of an artifact path, including the scheme.
 	// It is everything that is not the actual file name itself.
